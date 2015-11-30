@@ -1,0 +1,16 @@
+ARTICLES_metadata: file description
+
+Header = yes
+Separator = \t
+Encoding = UTF-8 without BOM
+
+Fields description =
+   uuid_h2: article identifier
+   title: article title
+   fakt: flag (1=article submitted by Fakt editors)
+   pap: flag (1=article source is PAP)
+   topics: list of comma separated article topics (provided by editor) 
+   image: flag (1=article contains at least 1 image) #note: flag might not necessarily be trustworthy for all the content sources
+   mediagallery: flag (1=article contains a gallery of images)
+
+

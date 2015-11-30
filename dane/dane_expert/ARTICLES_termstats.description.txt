@@ -1,0 +1,11 @@
+ARTICLES_termstats: file description
+
+Header = no !
+Separator = \t
+Encoding = ANSI
+
+Fields description =
+   V1: article identifier (= uuid_h2)
+   V2: first CTAG tag value element (e.g. "praet" for "praet:sg:m1:perf")
+   V3: proportion of terms with this value within the document
+   V4: sum of all terms within the document (including punctuation marks treated as separate terms)

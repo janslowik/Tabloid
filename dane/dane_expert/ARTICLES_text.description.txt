@@ -1,0 +1,11 @@
+ARTICLES_text: file description
+
+Header = yes
+Separator = \t
+Encoding = UTF-8 without BOM
+
+Fields description =
+   uuid_h2: article identifier
+   text: full article text
+
+

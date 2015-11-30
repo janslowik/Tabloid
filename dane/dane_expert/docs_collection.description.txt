@@ -1,0 +1,32 @@
+Folders description:
+ docs_collection_raw
+ docs_collection_tagged
+ docs_collection_baseform
+ docs_collection_basectag
+ 
+
+DOCS_COLLECTION_RAW
+ Content of every article (= 'text' field from ARTICLES_text.dat) is stored as a separated file with 'uuid_h2' fields used as a file name. 
+ Each document !should! contain exactly one line, with a singular EOL character = \r\l identifying the end of the content.
+ Original text structure (i.e. paragraphs, paragraph titles, etc.) should be removed.
+ Encoding: UTF-8 
+
+DOCS_COLLECTION_TAGGED
+ Every article is tagged by TaKIPI 1.8 tagger (http://nlp.pwr.wroc.pl/takipi/).
+ Folder contains XML documents (having extension .tag) with results of this tagger, represented in XCES format:
+  http://www.xces.org/
+ Encoding: UTF-8
+ 
+! UPDATED
+  
+DOCS_COLLECTION_BASEFORM2
+ Folder contains content of every article in its base form. Disambiguations are resolved by TaKIPI tagger.
+ Terms, which include all the puctuation marks as well, are separated by spaces.
+ Encoding: ANSI
+
+DOCS_COLLECTION_BASEFORM: (if exists) older version containing files with mixed encoding (UTF-8 or ANSI) - DO NOT USE! 
+ 
+DOCS_COLLECTION_BASECTAG
+ Folder contains CTAG tag values (from documents in: docs_collection_tagged) for all the terms in docs_collection_baseform.
+ Each tag value is separated by new line mark (\r\n).
+ Encoding: ANSI
