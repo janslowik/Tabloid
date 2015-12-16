@@ -39,8 +39,6 @@ def write_results_file(output_file_name, results_list):
 def program(working_directory, output_file_name, threshold):
     results_list = []
 
-    el
-
     for file in os.listdir(working_directory):
 
         if file.endswith(".txt"):
